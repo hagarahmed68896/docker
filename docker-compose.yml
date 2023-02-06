@@ -1,8 +1,8 @@
-version: "1.0"
+version: "3.6"
 services:
-  phpdockerweb:
-    image: "php:apache"
+  dockerphplab2:
+    image: "customimg:latest"
     ports:
-      - "8089:80"
+      - "8081:80"
     volumes:
-      - ./app:/var/www/html
+      - ./index:/var/www/html
